@@ -1,0 +1,171 @@
+@charset "utf-8";
+#wrap{overflow-x: hidden;
+}/* 제일 중요 */
+.inner {
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+}
+
+/* header */
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#wrap .bg{background: url(../image/Frame\ 43.png);}
+#header .inner .logo a img {
+    height: 80px;margin-top: 20px;
+}
+#header ul{display: flex;}
+
+#header ul li {
+    margin: 50px;
+}
+
+#header ul li a {
+    font-size: 2.8rem;
+    font-family: 'MaplestoryOTFBold';
+    opacity: 1;
+}
+
+#header ul li a img{width: 50px;}
+#header ul li a:nth-child(1):hover{color: #FFB6BC;transition: color 0.5s;}
+
+#header ul li span{opacity: 1;}
+#header ul li:hover span{opacity: 0;transition:opacity 0.5s ;}
+ #header ul img{width: 80px;
+position: absolute;right: 150px;opacity: 0;top: 40px;
+}
+#header ul li:hover img{opacity: 1;
+ transition:opacity 0.5s ;}
+
+/* main */
+#social {padding: 80px 0;}
+#social .inner h2{text-align: center;
+    font-family: 'MaplestoryOTFBold';
+    font-size: 5rem;
+padding-bottom: 50px;}
+#social .inner a img{width: 400px;height: 500px; border-top-left-radius:300px;border-top-right-radius:300px;}
+#social .inner dl{width: 500px;}
+
+#social .inner dl .more{display: flex;gap: 10px; padding-top: 90px;}
+#social .inner dl .more img{width: 120px;border-radius: 50px;}
+
+#social .store1 li {position: relative;}
+
+
+#social .store1 li a:after {
+    transition: opacity 0.5s;
+    opacity: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.5) url(../image/sub_img/ig_70.png) no-repeat center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top-left-radius:300px;border-top-right-radius:300px;
+}
+
+#social .store1 li:hover a:after{opacity: 1;}
+
+#social .inner .store1{display: flex;gap: 50px;margin-top:30px;justify-content: center;}
+
+
+#social .inner .store1 dl dt{margin-top: 50px; font-size: 4.3rem;font-family: 'MaplestoryOTFBold';font-weight: 300px;}
+
+#social .inner .store1 dl dd{margin-top: 50px;font-size: 1.8rem;}
+/* store2 */
+
+#social .store2 li {position: relative;}
+
+
+#social .store2 li a:after {
+    transition: opacity 0.5s;
+    opacity: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.5) url(../image/sub_img/duplit_food.jpeg) no-repeat center;
+    position: absolute;
+    left: 0;
+    
+    top: 0;
+    border-top-left-radius:300px;border-top-right-radius:300px;
+}
+
+#social .store2 li:hover a:after{opacity: 1;}
+
+#social .inner .store2{display: flex;gap: 50px;margin-top: 150px;justify-content: center;}
+
+
+#social .inner .store2 dl dt{margin-top: 50px; font-size: 4.3rem;font-family: 'MaplestoryOTFBold';font-weight: 300px;}
+
+#social .inner .store2 dl dd{margin-top: 100px;font-size: 1.8rem;}
+/* store3 */
+#social .store3 li {position: relative;}
+
+
+#social .store3 li a:after {
+    transition: opacity 0.5s;
+    opacity: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../image/sub_img/nerikiri.jpg) no-repeat center;
+    position: absolute;
+    background-size: contain;
+    left: 0;
+    top: 0;
+    border-top-left-radius:300px;border-top-right-radius:300px;
+}
+
+#social .store3 li:hover a:after{opacity: 1;}
+
+
+#social .inner .store3{display: flex;gap: 50px;margin-top: 150px;justify-content: center;}
+
+#social .inner .store3 dl dt{margin-top: 50px; font-size: 4.3rem;font-family: 'MaplestoryOTFBold';font-weight: 300px;}
+
+#social .inner .store3 dl dd{margin-top: 100px;font-size: 1.8rem;}
+/* store4 */
+#social .store4 li {position: relative;}
+
+
+#social .store4 li a:after {
+    transition: opacity 0.5s;
+    opacity: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #D5AE34 url(../image/sub_img/gelato_in.jpg) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top-left-radius:300px;border-top-right-radius:300px;
+}
+
+#social .store4 li:hover a:after{opacity: 1;}
+
+#social .inner .store4{display: flex;gap: 50px;margin-top: 150px;justify-content: center;}
+
+#social .inner .store4 dl dt{margin-top: 50px; font-size: 4.3rem;font-family: 'MaplestoryOTFBold';font-weight: 300px;}
+
+#social .inner .store4 dl dd{margin-top: 100px;font-size: 1.8rem;}
+
+#social .inner dl{position: relative;}
+
+#social .inner dl span{position: absolute;}
+
+/* footer */
+#footer{background: #efefef;padding: 20px 0;
+}
+#footer .inner{display: flex;justify-content: center;gap: 80px;}
+
+#footer .footer_txt{font-size: 1.3rem;font-weight: 700;margin-top: 50px;text-align: left;}
+#footer .footer_logo img{width: 280px;}
